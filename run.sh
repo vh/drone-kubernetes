@@ -34,7 +34,7 @@ if [ -z $PLUGIN_NAMESPACE ]; then
 fi
 
 kubectl config set-credentials default --token=$KUBERNETES_TOKEN
-if [ ! -z $KUBERNETES_CERT ]; then
+if [ -n $KUBERNETES_CERT ]; then
   echo $KUBERNETES_CERT > ca.crt
   kubectl config set-cluster default --server=$KUBERNETES_SERVER --certificate-authority=ca.crt
 else
