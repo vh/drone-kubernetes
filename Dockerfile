@@ -1,6 +1,6 @@
 FROM alpine:3.11.3
 
-ENV KUBERNETES_VERSION 1.15.8
+ENV KUBERNETES_VERSION 1.15.10
 
 RUN apk --no-cache add curl ca-certificates bash
 
