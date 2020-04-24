@@ -1,4 +1,4 @@
-FROM alpine:3.11.5
+FROM alpine:3.11.6
 
 ENV KUBERNETES_VERSION 1.15.11
 
